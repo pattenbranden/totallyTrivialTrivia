@@ -44,9 +44,9 @@ function newQuestion() {
     //random number generator function to pick the new question from the bank
 $("#questionDisplay").text(qBank.q1.text)
 questionAnswers = $("<div>")
-    //random number generator to mix up the answers between rounds
+    //i want to add a random number generator to mix up the answers index between rounds
 $("#a1").text(qBank.q1.wa[1])
-// DRY  i'll have to think about this later
+// DRY  i'll have to think about this later, should be a for loop with array index++
 $("#a2").text(qBank.q1.wa[2])
 
 $("#a3").text(qBank.q1.wa[0])
