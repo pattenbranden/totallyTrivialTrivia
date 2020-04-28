@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-    <title>Trivia!</title>
-</head>
-<body>
-    <div class="container bg-warning">
-        <div class="row">
-            <div class="col-sm-12 text-center bg-success">
-                <h1 id="title">Totally Trivial Trivia!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOOM Trivia || Branden Patten</title>
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP JQUERY  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assests/css/styles.css" />
+    <script src="./assests/js/game.js"></script>
+  </head>
 
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center ">
-                
-                <span id="timeRemaining">placeholder timer</span>
-                <span id="questionDisplay">placeholder question</span>
-                <div id="answerList">placeholder answerList
-                <div class="bg-secondary" id="answerList">
-                    <span class="answer" id="a1">placeholder1</span>
-                    <span class="answer" id="a2">placeholder2</span>
-                    <span class="answer" id="a3">placeholder3</span>
-                    <span class="answer" id="a4">placeholder4</span>
-
-                </div>
-                </div>
-                
-                
-                
-
-            </div>
-
-        </div>
-
-
-
+  <body>
+    <div class="header">
+      <h1>DOOM Trivia</h1>
+      <div id="timer-display">06:66</div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./assets/javascript/app.js"></script>
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 quiz">
+          <p class="start">Hit start to begin the quiz!</p>
+          <button class="start">Start</button>
+          <div class="question-block"></div>
+          <div class="results">
+            <h2 id="correct">Correct:</h2>
+            <h2 id="incorrect">Incorrect:</h2>
+            <h2 id="unanswered">Unanswered:</h2>
+            <img src="./assests/images/doom-toot-poster.jpg" alt="" />
+          </div>
+
+          <button class="done">Done!</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
